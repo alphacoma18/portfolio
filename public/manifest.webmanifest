@@ -1,0 +1,115 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"background_color": "#3d0007",
+	"categories": ["education", "events", "news", "reference"],
+	"description": "Alpha Romer Coma Portfolio",
+	"dir": "ltr",
+	"display": "standalone",
+	"display_override": [
+		"standalone",
+		"minimal-ui",
+		"fullscreen",
+		"window-controls-overlay",
+		"browser"
+	],
+	"related_applications": [
+		{
+			"platform": "webapp",
+			"url": "https://alpharomercoma.me",
+			"id": "https://alpharomercoma.me"
+		}
+	],
+
+	"edge_side_panel": {
+		"preferred_width": 400
+	},
+	"handle_links": "preferred",
+	"icons": [
+		{
+			"sizes": "36x36",
+			"src": "/android-chrome-36x36.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "48x48",
+			"src": "/android-chrome-48x48.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "72x72",
+			"src": "/android-chrome-72x72.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "96x96",
+			"src": "/android-chrome-96x96.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "144x144",
+			"src": "/android-chrome-144x144.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "192x192",
+			"src": "/android-chrome-192x192.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "256x256",
+			"src": "/android-chrome-256x256.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "384x384",
+			"src": "/android-chrome-384x384.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "512x512",
+			"src": "/android-chrome-512x512.png",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	],
+	"id": "/",
+	"iarc_rating_id": "",
+	"lang": "en",
+	"launch_handler": {
+		"client_mode": ["auto", "navigate-existing"]
+	},
+	"name": "Alpha Romer Coma",
+	"orientation": "natural",
+	"scope": "/",
+	"scope_extensions": [
+		{
+			"origin": "https://alpharomercoma.me"
+		}
+	],
+	"prefer_related_applications": false,
+	"short_name": "Alpha Romer Coma",
+	"shortcuts": [
+		{
+			"name": "Home",
+			"short_name": "Home",
+			"url": "/",
+			"description": "Portfolio Home",
+			"icons": [
+				{ "src": "/android-chrome-36x36.png", "sizes": "36x36" },
+				{ "src": "/android-chrome-48x48.png", "sizes": "48x48" },
+				{ "src": "/android-chrome-72x72.png", "sizes": "72x72" },
+				{ "src": "/android-chrome-96x96.png", "sizes": "96x96" },
+				{ "src": "/android-chrome-144x144.png", "sizes": "144x144" },
+				{ "src": "/android-chrome-192x192.png", "sizes": "192x192" }
+			]
+		}
+	],
+	"start_url": "https://alpharomercoma.me",
+	"theme_color": "#3d0007"
+}

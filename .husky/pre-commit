@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+pnpm run killport
+pnpm run removeNext
+pnpm lint-staged
+pnpm run lint
+pnpm run build
+pnpm run removeNext

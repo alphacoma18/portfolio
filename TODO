@@ -1,0 +1,6 @@
+# TODO
+
+1. Gitflow command for fedora
+2. Verify if Semantic Release is working
+3. Defer build checks and lints to Continuous Integration
+4. Add translation support

@@ -1,0 +1,10 @@
+[
+	{
+		"relation": [""],
+		"target": {
+			"namespace": "android_app",
+			"package_name": "",
+			"sha256_cert_fingerprints": [""]
+		}
+	}
+]
