@@ -15,8 +15,8 @@
 	"related_applications": [
 		{
 			"platform": "webapp",
-			"url": "https://alpharomercoma.me",
-			"id": "https://alpharomercoma.me"
+			"url": "https://alpharomer.vercel.app",
+			"id": "https://alpharomer.vercel.app"
 		}
 	],
 
@@ -89,7 +89,7 @@
 	"scope": "/",
 	"scope_extensions": [
 		{
-			"origin": "https://alpharomercoma.me"
+			"origin": "https://alpharomer.vercel.app"
 		}
 	],
 	"prefer_related_applications": false,
@@ -110,6 +110,6 @@
 			]
 		}
 	],
-	"start_url": "https://alpharomercoma.me",
+	"start_url": "https://alpharomer.vercel.app",
 	"theme_color": "#3d0007"
 }
