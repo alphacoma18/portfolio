@@ -6,6 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Viewport } from "next";
 import { Roboto as FontSans } from "next/font/google";
+import "@/styles/globals.css";
 
 const fontSans = FontSans({
 	weight: ["400", "700"],
