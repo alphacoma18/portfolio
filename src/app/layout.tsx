@@ -1,12 +1,13 @@
 import NextAuthProvider from "@/components/app/NextAuthProvider";
+import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import { env } from "@/server/env";
+import "@/styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Viewport } from "next";
 import { Roboto as FontSans } from "next/font/google";
-import "@/styles/globals.css";
 
 const fontSans = FontSans({
 	weight: ["400", "700"],
@@ -149,7 +150,7 @@ export const metadata: Metadata = {
 
 const RootLayout: React.FC<ChildrenProps> = ({ children }) => {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
 			<NextAuthProvider>
 				<body
 					className={cn(
@@ -157,7 +158,14 @@ const RootLayout: React.FC<ChildrenProps> = ({ children }) => {
 						fontSans.variable,
 					)}
 				>
-					{children}
+					<ThemeProvider
+						attribute="class"
+						defaultTheme="system"
+						enableSystem
+						disableTransitionOnChange
+					>
+						{children}
+					</ThemeProvider>
 				</body>
 				<Analytics />
 				<SpeedInsights />
