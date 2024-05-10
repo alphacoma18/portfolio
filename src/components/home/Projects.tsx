@@ -56,7 +56,7 @@ const projects: Project[] = [
 const Project = ({ title, description, image, link }: Project) => {
 	return (
 		<div className="group relative overflow-hidden rounded-lg">
-			<Link className="absolute inset-0 z-10" href={link}>
+			<Link className="absolute inset-0 z-10" href={link} target="_blank">
 				<span className="sr-only">View Project</span>
 			</Link>
 			<Image

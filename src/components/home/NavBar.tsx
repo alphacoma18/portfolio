@@ -2,14 +2,10 @@
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import {
-	GitHubLogoIcon,
-	LinkedInLogoIcon,
-	MoonIcon,
-	TwitterLogoIcon,
-} from "@radix-ui/react-icons";
+import { MoonIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import { socials } from "./Socials";
 
 interface NavLink {
 	name: string;
@@ -54,21 +50,21 @@ const NavBar = () => {
 				</Link>
 				<div className="flex items-center gap-4 md:gap-2">
 					<div className="flex items-center gap-2 md:gap-4">
-						<Link aria-label="GitHub" href="#">
-							<GitHubLogoIcon className="h-6 w-6" />
-						</Link>
-						<Link aria-label="Twitter" href="#">
-							<TwitterLogoIcon className="h-6 w-6" />
-						</Link>
-						<Link aria-label="LinkedIn" href="#">
-							<LinkedInLogoIcon className="h-6 w-6" />
-						</Link>
+						{socials.map((social) => (
+							<Link
+								key={social.link}
+								aria-label={social.name}
+								href={social.link}
+								target="_blank"
+							>
+								{social.icon}
+							</Link>
+						))}
 						<span
 							aria-label="Toggle dark mode"
 							onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
 						>
 							<MoonIcon className="h-6 w-6" />
-							{/* <MoonIcon className="h-6 w-6" /> */}
 						</span>
 						<Sheet>
 							<SheetTrigger asChild>
