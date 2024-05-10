@@ -7,12 +7,12 @@ const Hero = () => {
 			<div className="container grid items-center gap-8 px-4 md:grid-cols-2 md:px-6">
 				<div className="space-y-4">
 					<h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-						Alpha Romer Coma
+						Hey, I&apos;m Alpha! 👋
 					</h1>
 					<p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl">
 						I&apos;m a professional software engineer with a passion for
 						building bleeding-edge and innovative applications that solve real
-						world problems.
+						world problems. Pleasure to meet you! 🚀
 					</p>
 					<div className="flex flex-col gap-2 min-[400px]:flex-row">
 						<Link

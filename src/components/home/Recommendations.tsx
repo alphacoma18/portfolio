@@ -4,7 +4,7 @@ import { Card, CardContent } from "../ui/card";
 interface Recommendation {
 	name: string;
 	position: string;
-	content: string;
+	content: React.ReactNode;
 	path: string;
 }
 
@@ -12,49 +12,123 @@ const recommendations = [
 	{
 		name: "Justine Jude Pura, MBA",
 		position: "Computer Science Department",
-		content: `What distinguishes Alpha further is his remarkable humility and positive attitude. Despite his impressive credentials and achievements, he remains grounded and approachable, always willing to learn and grow. His blend of intellectual curiosity, leadership qualities, and character make him a standout individual.`,
+		content: (
+			<span>
+				What distinguishes Alpha further is his{" "}
+				<span className="bg-blue-300">
+					remarkable humility and positive attitude
+				</span>
+				. Despite his impressive credentials and achievements, he remains
+				grounded and approachable, always willing to learn and grow. His blend
+				of intellectual curiosity, leadership qualities, and character make him
+				a standout individual.
+			</span>
+		),
 		path: "/sir_pura.jpg",
 	},
 	{
 		name: "Jeneffer Sabonsolin",
 		position: "Computer Science Department",
-		content: `Alpha Romer Coma, my student in design thinking, exhibits a profound passion for academic excellence, evident in the outstanding quality of his work. I eagerly anticipate witnessing his continued growth and achievements.`,
+		content: (
+			<span>
+				Alpha Romer Coma, my student in design thinking, exhibits a{" "}
+				<span className="bg-blue-300">
+					profound passion for academic excellence
+				</span>
+				, evident in the outstanding quality of his work. I eagerly anticipate
+				witnessing his continued growth and achievements.
+			</span>
+		),
 		path: "/sir_sabonsolin.jpg",
 	},
 	{
 		name: "Michelle Anne Constantino",
 		position: "Computer Science Department",
-		content: `I was Alpha's Computer Systems Architecture professor, but I didn't see him just as a student of CSA, he has always given an effort towards class work and goes beyond what is being asked. I had always admired how you go beyond what classes are always.`,
+		content: (
+			<span>
+				I was Alpha&apos;s Computer Systems Architecture professor, but I
+				didn&apos;t see him just as a student of CSA, he has always given an
+				effort towards class work and{" "}
+				<span className="bg-blue-300">goes beyond what is being asked</span>. I
+				had always admired how you go beyond what classes are always.
+			</span>
+		),
 		path: "/maam_constantino.jpg",
 	},
 	{
 		name: "Beau Gray Habal",
 		position: "Computer Science Department",
-		content: `Alpha consistently performs well academically. His work reflects a deep understanding of the material, and he consistently produces quality assignment. Alpha is exceptionally curious and displays a genuine eagerness to learn. He works well with his fellow classmates and is evident that he is a team player`,
+		content: (
+			<span>
+				Alpha consistently performs well academically. His work reflects a deep
+				understanding of the material, and he consistently produces quality
+				assignment. Alpha is{" "}
+				<span className="bg-blue-300">
+					exceptionally curious and displays a genuine eagerness to learn
+				</span>
+				. He works well with his fellow classmates and is evident that he is a
+				team player
+			</span>
+		),
 		path: "/default.jpg",
 	},
 	{
 		name: "John Kenneth Andales",
 		position: "Computer Science Department",
-		content: `Mr. Coma is a development-oriented person, as his passion for the field is unparalleled. His enthusiasm for sharing ideas and collaborating with colleagues fosters a dynamic and engaging work environment.`,
+		content: (
+			<span>
+				Mr. Coma is a development-oriented person, as{" "}
+				<span className="bg-blue-300">
+					his passion for the field is unparalleled
+				</span>
+				. His enthusiasm for sharing ideas and collaborating with colleagues
+				fosters a dynamic and engaging work environment.
+			</span>
+		),
 		path: "/sir_andales.jpg",
 	},
 	{
 		name: "Angelo Arguson, DIT",
 		position: "Computer Science Department",
-		content: `Mr. Coma consistently performs well academically. His work reflects a deep understanding of the material, and he consistently produces quality assignment. Alpha is exceptionally curious and displays a genuine eagerness to learn.`,
+		content: (
+			<span>
+				Mr. Alpha Romer is my data structure student. He is industrious and
+				knowledgeable in computer programming. He is a multilingual person and a{" "}
+				<span className="bg-blue-300">very competitive</span> when it comes to
+				project submissions. He can be a candidate for intern software
+				development in the future of this school.
+			</span>
+		),
 		path: "/default.jpg",
 	},
 	{
 		name: "Xynil Jhed Lacap",
 		position: "Software Engineer",
-		content: `Alpha is an amazing team player, who always steps up his game especially in developing a program. He is really adept at adapting in unfavorable situations, and his skills to turn the tide in our team's favor is incredible.`,
+		content: (
+			<span>
+				Alpha is an amazing team player, who always steps up his game especially
+				in developing a program. He is{" "}
+				<span className="bg-blue-300">
+					really adept at adapting in unfavorable situations
+				</span>
+				, and his skills to turn the tide in our team&apos;s favor is
+				incredible.
+			</span>
+		),
 		path: "/lacap.jpg",
 	},
 	{
 		name: "John Rey Basilio",
 		position: "Software Engineer",
-		content: `Mr. Coma is an excellent teammate you can rely on. We both honed our skills through simultaneous exchange of ideas or solutions whether it may be design-related or code-related. Learning with Mr. Coma is such a pleasure.`,
+		content: (
+			<span>
+				Mr. Coma is an{" "}
+				<span className="bg-blue-300">excellent teammate you can rely on</span>.
+				We both honed our skills through simultaneous exchange of ideas or
+				solutions whether it may be design-related or code-related. Learning
+				with Mr. Coma is such a pleasure.
+			</span>
+		),
 		path: "/basilio.jpg",
 	},
 ];
