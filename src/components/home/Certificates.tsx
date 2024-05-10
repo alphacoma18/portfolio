@@ -120,12 +120,12 @@ const Certificates = () => {
 				<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
 					Certificates
 				</h2>
-				<p className="max-w-[600px] mx-auto text-gray-500 dark:text-gray-400 md:text-xl">
+				<p className="max-w-[600px] mx-auto text-gray-500 dark:text-gray-400 md:text-xl text-balance">
 					Explore my certifications and achievements in the field of software
 					development.
 				</p>
 			</div>
-			<div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 px-4 md:px-6">
+			<div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 px-4 md:px-6">
 				{certificates.map((certificate, index) => (
 					<Certificate key={index} {...certificate} />
 				))}

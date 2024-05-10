@@ -87,7 +87,7 @@ const Projects = () => {
 					throughout the years
 				</p>
 			</div>
-			<div className="container grid gap-4 px-4 md:px-6 lg:grid-cols-3">
+			<div className="container grid gap-4 px-4 sm:grid-cols-2 md:px-6 lg:grid-cols-3">
 				{projects.map((project, index) => (
 					<Project key={index} {...project} />
 				))}

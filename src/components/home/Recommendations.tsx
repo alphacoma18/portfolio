@@ -100,7 +100,7 @@ const Recommendations = () => {
 					<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
 						What Others Say
 					</h2>
-					<p className="max-w-[600px] mx-auto text-gray-500 dark:text-gray-400 md:text-xl">
+					<p className="max-w-[600px] mx-auto text-gray-500 dark:text-gray-400 md:text-xl text-balance">
 						Hear from my professors, colleagues, and clients about their
 						experience working with me.
 					</p>

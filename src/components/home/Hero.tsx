@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
 	return (
@@ -11,9 +11,8 @@ const Hero = () => {
 					</h1>
 					<p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl">
 						I&apos;m a professional software engineer with a passion for
-						building innovative and user-friendly web applications. I specialize
-						in front-end development, but I&apos;m also skilled in back-end and
-						full-stack development.
+						building bleeding-edge and innovative applications that solve real
+						world problems.
 					</p>
 					<div className="flex flex-col gap-2 min-[400px]:flex-row">
 						<Link
@@ -23,20 +22,22 @@ const Hero = () => {
 							View Resume
 						</Link>
 						<Link
-							className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+							className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
 							href="#"
 						>
 							Let&apos;s Chat!
 						</Link>
 					</div>
 				</div>
-				<div className="flex justify-center">
+				<div className="flex rounded-lg justify-center w-full items-center relative h-[400px]">
 					<Image
 						alt="Jared Palmer"
-						className="aspect-square max-w-[300px] overflow-hidden rounded-full object-cover"
-						height={500}
-						src="/placeholder.svg"
-						width={500}
+						style={{
+							objectFit: "contain",
+						}}
+						className="rounded-sm"
+						fill
+						src="/media/img/self/google.jpg"
 					/>
 				</div>
 			</div>
