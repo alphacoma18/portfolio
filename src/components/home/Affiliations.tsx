@@ -92,7 +92,7 @@ const Affiliations = () => {
 								<h3 className="text-lg font-semibold">
 									Institute of Electrical and Electronics Engineers
 								</h3>
-								<p className="text-sm">Member</p>
+								<p className="text-sm">Volunteer</p>
 							</div>
 						</div>
 					</div>

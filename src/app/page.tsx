@@ -7,6 +7,7 @@ import Socials from "@/components/home/Socials";
 import Competencies from "@/components/home/Competencies";
 import Footer from "@/components/home/Footer";
 import Affiliations from "@/components/home/Affiliations";
+import Awards from "@/components/home/Awards";
 export default function Home() {
 	return (
 		<>
@@ -18,6 +19,7 @@ export default function Home() {
 				<Certificates />
 				<Affiliations />
 				<Recommendations />
+				<Awards />
 				<Socials />
 			</main>
 			<Footer />
