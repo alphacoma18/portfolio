@@ -68,7 +68,7 @@ const Award: React.FC<Award> = ({ name, image, issuer, issuedOn }) => {
 	);
 };
 
-const Awards = () => {
+const Awards: React.FC = () => {
 	return (
 		<section className="w-full bg-white py-12 dark:bg-gray-950">
 			<div className="container px-4 md:px-6">

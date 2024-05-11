@@ -8,7 +8,7 @@ interface Recommendation {
 	path: string;
 }
 
-const recommendations = [
+const recommendations: Recommendation[] = [
 	{
 		name: "Justine Jude Pura, MBA",
 		position: "Computer Science Department",
@@ -94,9 +94,11 @@ const recommendations = [
 			<span>
 				Mr. Alpha Romer is my data structure student. He is industrious and
 				knowledgeable in computer programming. He is a multilingual person and a{" "}
-				<span className="bg-blue-300">very competitive</span> when it comes to
-				project submissions. He can be a candidate for intern software
-				development in the future of this school.
+				<span className="bg-blue-300">
+					very competitive when it comes to project submissions
+				</span>
+				. He can be a candidate for intern software development in the future of
+				this school.
 			</span>
 		),
 		path: "/default.jpg",
@@ -133,7 +135,12 @@ const recommendations = [
 	},
 ];
 
-const CustomCard = ({ name, position, content, path }: Recommendation) => {
+const Recommendation: React.FC<Recommendation> = ({
+	name,
+	position,
+	content,
+	path,
+}) => {
 	return (
 		<Card>
 			<CardContent className="space-y-4 p-6">
@@ -166,7 +173,7 @@ const CustomCard = ({ name, position, content, path }: Recommendation) => {
 	);
 };
 
-const Recommendations = () => {
+const Recommendations: React.FC = () => {
 	return (
 		<section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
 			<div className="container grid gap-8 px-4 md:px-6 lg:grid-cols-1">
@@ -181,7 +188,7 @@ const Recommendations = () => {
 				</div>
 				<div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
 					{recommendations.map((recommendation, index) => (
-						<CustomCard key={index} {...recommendation} />
+						<Recommendation key={index} {...recommendation} />
 					))}
 				</div>
 			</div>

@@ -39,7 +39,7 @@ const navLinks: NavLink[] = [
 	},
 ];
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
 	const { setTheme, theme } = useTheme();
 	return (
 		<header className="fixed top-0 left-0 z-50 w-full bg-white shadow-sm dark:bg-gray-950 dark:text-gray-50">

@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 interface Certificate {
 	name: string;
 	image: string;
@@ -82,7 +82,7 @@ const certificates: Certificate[] = [
 	},
 ];
 
-const Certificate = ({ name, image, link, issuer }: Certificate) => {
+const Certificate: React.FC<Certificate> = ({ name, image, link, issuer }) => {
 	return (
 		<div className="relative group overflow-hidden rounded-lg">
 			<Image

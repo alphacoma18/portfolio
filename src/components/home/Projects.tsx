@@ -53,7 +53,7 @@ const projects: Project[] = [
 	},
 ];
 
-const Project = ({ title, description, image, link }: Project) => {
+const Project: React.FC<Project> = ({ title, description, image, link }) => {
 	return (
 		<div className="group relative overflow-hidden rounded-lg">
 			<Link className="absolute inset-0 z-10" href={link} target="_blank">
@@ -75,7 +75,7 @@ const Project = ({ title, description, image, link }: Project) => {
 	);
 };
 
-const Projects = () => {
+const Projects: React.FC = () => {
 	return (
 		<section className="w-full py-12 grid gap-8 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
 			<div className="space-y-4 text-center">

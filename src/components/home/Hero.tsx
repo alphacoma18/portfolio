@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Hero = () => {
+const Hero: React.FC = () => {
 	return (
 		<section className="w-full bg-gray-100 py-24 dark:bg-gray-800">
 			<div className="container grid items-center gap-8 px-4 md:grid-cols-2 md:px-6">
