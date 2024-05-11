@@ -6,6 +6,7 @@ import Certificates from "@/components/home/Certificates";
 import Socials from "@/components/home/Socials";
 import Competencies from "@/components/home/Competencies";
 import Footer from "@/components/home/Footer";
+import Affiliations from "@/components/home/Affiliations";
 export default function Home() {
 	return (
 		<>
@@ -15,6 +16,7 @@ export default function Home() {
 				<Competencies />
 				<Projects />
 				<Certificates />
+				<Affiliations />
 				<Recommendations />
 				<Socials />
 			</main>
