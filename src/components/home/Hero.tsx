@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
 						</Link>
 					</div>
 				</div>
-				<div className="flex rounded-lg justify-center w-full items-center relative h-[400px]">
+				<div className="flex rounded-lg justify-center w-full items-center relative aspect-video">
 					<Image
 						alt="Jared Palmer"
 						style={{
