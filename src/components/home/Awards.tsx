@@ -14,15 +14,15 @@ const awards: Award[] = [
 		issuedOn: "March 2024",
 	},
 	{
-		name: "Space Apps 2023 Global Nominee",
-		image: "/nasa_nominee.png",
-		issuer: "FEU Tech ACM",
+		name: "Top 1% of 500K + WakaTime Developers 2023",
+		image: "/wakatime.png",
+		issuer: "WakaTime",
 		issuedOn: "Jan 2024",
 	},
 	{
-		name: "Top 1% of 500K + WakaTime Developers 2023",
-		image: "/wakatime.png",
-		issuer: "National Aeronautics and Space Administration (NASA) ",
+		name: "Space Apps 2023 Global Nominee",
+		image: "/nasa_nominee.png",
+		issuer: "National Aeronautics and Space Administration (NASA)",
 		issuedOn: "Nov 2023",
 	},
 	{
@@ -32,7 +32,25 @@ const awards: Award[] = [
 		issuedOn: "Nov 2023",
 	},
 	{
-		name: "President's Scholar with High Honors",
+		name: "Nihongojin Essay Open Call Winner",
+		image: "/nihongojin.png",
+		issuer: "Japan Foundation",
+		issuedOn: "Nov 2023",
+	},
+	{
+		name: "Nihongo Stories Featured Story",
+		image: "/nihongo_stories.png",
+		issuer: "Japan Foundation",
+		issuedOn: "Aug 2023",
+	},
+	{
+		name: "日本語能力試験 N3",
+		image: "/jlpt_n3.png",
+		issuer: "Japan Foundation",
+		issuedOn: "Jan 2023",
+	},
+	{
+		name: "President's Scholar w/ High Honors",
 		image: "/fit_scholarship.png",
 		issuer: "FEU Institute of Technology",
 		issuedOn: "Aug 2022",
@@ -70,7 +88,7 @@ const Award: React.FC<Award> = ({ name, image, issuer, issuedOn }) => {
 
 const Awards: React.FC = () => {
 	return (
-		<section className="w-full bg-white py-12 dark:bg-gray-950">
+		<section className="w-full bg-gray-100 py-12 dark:bg-gray-950">
 			<div className="container px-4 md:px-6">
 				<div className="space-y-4 text-center">
 					<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">

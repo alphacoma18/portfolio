@@ -116,7 +116,7 @@ const Certificate: React.FC<Certificate> = ({ name, image, link, issuer }) => {
 
 const Certificates = () => {
 	return (
-		<section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+		<section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-800">
 			<div className="space-y-4 text-center">
 				<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
 					Certificates

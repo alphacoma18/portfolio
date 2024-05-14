@@ -14,7 +14,7 @@ const competencies: Competency[] = [
 		icon: <CodeIcon className="h-6 w-6" />,
 		title: "Software Engineering",
 		description:
-			"Proficient in designing and developing scalable, maintainable, and efficient software solutions using a variety of programming languages and frameworks.",
+			"Proficient in designing and developing scalable, maintainable, and industry standard software solutions using bleeding-edge technologies.",
 	},
 	{
 		icon: <FaBriefcase className="h-6 w-6" />,
@@ -46,7 +46,7 @@ const Competency: React.FC<Competency> = ({ icon, title, description }) => {
 
 const Competencies: React.FC = () => {
 	return (
-		<section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+		<section className="bg-white w-full py-12 md:py-24 lg:py-32 dark:bg-gray-800">
 			<div className="container grid gap-8 px-4 md:px-6 lg:grid-cols-1">
 				<div className="space-y-4 text-center">
 					<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">

@@ -40,7 +40,7 @@ const affiliations: Affiliation[] = [
 	{
 		company: "Skilio",
 		image: "/skilio.png",
-		role: ["Scholar Member"],
+		role: ["Scholar Fellow"],
 	},
 	{
 		company: "GitHub",
@@ -89,7 +89,7 @@ const Affiliation: React.FC<Affiliation> = ({ company, image, role }) => {
 
 const Affiliations: React.FC = () => {
 	return (
-		<section className="w-full bg-white py-12 dark:bg-gray-950">
+		<section className="w-full bg-gray-100 py-12 dark:bg-gray-950">
 			<div className="container px-4 md:px-6">
 				<div className="space-y-4 text-center">
 					<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">

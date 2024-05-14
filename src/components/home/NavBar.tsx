@@ -30,6 +30,10 @@ const navLinks: NavLink[] = [
 		href: "/blog",
 	},
 	{
+		name: "Gallery",
+		href: "/gallery",
+	},
+	{
 		name: "Engagement",
 		href: "/engagement",
 	},
