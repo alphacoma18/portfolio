@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/alphacoma18/portfolio/compare/v1.0.1...v1.0.2) (2024-05-15)
+
+
+### Bug Fixes
+
+* mispelled verified certificate ([6ae39b5](https://github.com/alphacoma18/portfolio/commit/6ae39b5cd37b9dc4fb8e54ebdb12dffd4c331e45))
+* remove error placeholder profile picture ([6e4c327](https://github.com/alphacoma18/portfolio/commit/6e4c3276d698840ddd523d3c840fbd58909fee33))
+
 ## [1.0.1](https://github.com/alphacoma18/portfolio/compare/v1.0.0...v1.0.1) (2024-05-03)
 
 
