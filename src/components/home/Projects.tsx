@@ -21,7 +21,7 @@ const projects: Project[] = [
 		description:
 			"Your feature-rich modern note-taking & blogging cross-platform application.",
 		image: "/mdstudio.png",
-		link: "https://markdownstudio.tech/",
+		link: "https://markdownstudio.vercel.app",
 	},
 	{
 		title: "Fireguard",

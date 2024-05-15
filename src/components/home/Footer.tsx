@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
 					<span className="text-lg font-bold">Alpha Romer Coma</span>
 				</div>
 				<nav className="flex items-center space-x-6 mt-4 md:mt-0">
-					<Link className="hover:underline" href="#">
+					<Link className="hover:underline" href="/sitemap.xml">
 						Site Map
 					</Link>
 				</nav>

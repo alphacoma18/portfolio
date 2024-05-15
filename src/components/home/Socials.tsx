@@ -19,7 +19,7 @@ export const socials: Social[] = [
 	},
 	{
 		name: "Slack",
-		link: "https://twitter.com/alphacoma18/",
+		link: "https://comadevelopmentllc.slack.com/team/U055R478A2G",
 		icon: <FaSlack className="h-6 w-6" />,
 		description:
 			"Send me a message on Slack to chat about potential collaborations, projects, or opportunities... or just to drop by and say hi!",
