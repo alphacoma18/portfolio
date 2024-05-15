@@ -4,17 +4,24 @@ import { FaFileAlt } from "react-icons/fa";
 import { MdMessage } from "react-icons/md";
 const Hero: React.FC = () => {
 	return (
-		<section className="w-full bg-gray-100 py-24 dark:bg-gray-800">
-			<div className="container grid items-center gap-8 px-4 md:grid-cols-2 md:px-6">
+		<section className="w-full py-24 dark:bg-gray-800 relative">
+			<Image
+				src={"/media/img/bg/manila.png"}
+				style={{ objectFit: "cover" }}
+				fill
+				alt="Manila, Philippines"
+				className="absolute inset-0 w-full h-full object-cover object-center -z-10 blur-sm brightness-50"
+			/>
+			<div className="container grid items-center gap-8 px-4 md:grid-cols-2 md:px-6 z-50">
 				<div className="space-y-4">
-					<h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+					<h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white">
 						Hey, I&apos;m Alpha! 👋
 					</h1>
-					<p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl">
+					<p className="max-w-[600px] text-white dark:text-gray-400 md:text-xl">
 						I&apos;m a professional{" "}
-						<span className="bg-blue-300">Software Engineer</span> with a
-						passion for building bleeding-edge and innovative applications that
-						solve real world problems. Pleasure to meet you! 🚀
+						<span className="font-black">Software Engineer</span> with a passion
+						for building bleeding-edge and innovative applications that solve
+						real world problems. Pleasure to meet you! 🚀
 					</p>
 					<div className="flex flex-col gap-2 min-[400px]:flex-row">
 						<Link
