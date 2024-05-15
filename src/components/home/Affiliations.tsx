@@ -93,7 +93,7 @@ const Affiliations: React.FC = () => {
 			<div className="container px-4 md:px-6">
 				<div className="space-y-4 text-center">
 					<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-						Affiliations
+						Professional Affiliations
 					</h2>
 					<p className="max-w-[600px] mx-auto text-gray-500 dark:text-gray-400 md:text-xl text-balance">
 						I&apos;m proud to be affiliated with these amazing companies and

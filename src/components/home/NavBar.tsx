@@ -2,44 +2,59 @@
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { MoonIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import { CgProfile } from "react-icons/cg";
+import { CiGlobe } from "react-icons/ci";
+import {
+	FaBlog,
+	FaChalkboardTeacher,
+	FaHome,
+	FaImages,
+	FaRocket,
+} from "react-icons/fa";
 import { socials } from "./Socials";
-
 interface NavLink {
 	name: string;
 	href: string;
+	icon: React.ReactNode;
 }
 
 const navLinks: NavLink[] = [
 	{
 		name: "Home",
 		href: "/",
+		icon: <FaHome className="h-6 w-6" />,
 	},
 	{
 		name: "About",
 		href: "/about",
+		icon: <CgProfile className="h-6 w-6" />,
 	},
 	{
 		name: "Projects",
 		href: "/Projects",
+		icon: <FaRocket className="h-6 w-6" />,
 	},
 	{
 		name: "Blog",
 		href: "/blog",
+		icon: <FaBlog className="h-6 w-6" />,
 	},
 	{
 		name: "Gallery",
 		href: "/gallery",
+		icon: <FaImages className="h-6 w-6" />,
 	},
 	{
 		name: "Engagement",
 		href: "/engagement",
+		icon: <FaChalkboardTeacher className="h-6 w-6" />,
 	},
 	{
 		name: "Contact",
 		href: "/contact",
+		icon: <CiGlobe className="h-6 w-6" />,
 	},
 ];
 
@@ -54,22 +69,12 @@ const NavBar: React.FC = () => {
 				</Link>
 				<div className="flex items-center gap-4 md:gap-2">
 					<div className="flex items-center gap-2 md:gap-4">
-						{socials.map((social) => (
-							<Link
-								key={social.link}
-								aria-label={social.name}
-								href={social.link}
-								target="_blank"
-							>
-								{social.icon}
-							</Link>
-						))}
-						<span
+						{/* <span
 							aria-label="Toggle dark mode"
 							onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
 						>
 							<MoonIcon className="h-6 w-6" />
-						</span>
+						</span> */}
 						<Sheet>
 							<SheetTrigger asChild>
 								<Button className="md:hidden" size="icon" variant="outline">
@@ -78,16 +83,33 @@ const NavBar: React.FC = () => {
 								</Button>
 							</SheetTrigger>
 							<SheetContent side="right">
-								<div className="grid gap-4 p-4">
-									{navLinks.map((link) => (
-										<Link
-											key={link.href}
-											href={link.href}
-											className="text-sm font-medium hover:underline"
-										>
-											{link.name}
-										</Link>
-									))}
+								<div className="flex flex-col justify-between h-full">
+									<div className="grid gap-4 p-4">
+										{navLinks.map((link) => (
+											<Link
+												key={link.href}
+												href={link.href}
+												className="text-sm font-medium hover:underline flex gap-4 items-center"
+											>
+												{link.icon}
+												{link.name}
+											</Link>
+										))}
+									</div>
+									<div className="flex gap-4 p-4 flex-col">
+										{socials.map((social) => (
+											<a
+												key={social.name}
+												href={social.link}
+												target="_blank"
+												rel="noopener noreferrer"
+												className="text-gray-500 hover:text-gray-700 flex gap-4"
+											>
+												{social.icon}
+												{social.name}
+											</a>
+										))}
+									</div>
 								</div>
 							</SheetContent>
 						</Sheet>

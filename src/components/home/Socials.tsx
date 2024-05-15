@@ -1,11 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-	GitHubLogoIcon,
-	LinkedInLogoIcon,
-	TwitterLogoIcon,
-} from "@radix-ui/react-icons";
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
-
+import { FaGooglePlay, FaMicrosoft, FaSlack, FaYoutube } from "react-icons/fa";
 interface Social {
 	name: string;
 	link: string;
@@ -22,11 +18,11 @@ export const socials: Social[] = [
 			"Check out my GitHub profile to see my latest open-source contributions, code samples, and project repositories.",
 	},
 	{
-		name: "Twitter",
+		name: "Slack",
 		link: "https://twitter.com/alphacoma18/",
-		icon: <TwitterLogoIcon className="h-6 w-6" />,
+		icon: <FaSlack className="h-6 w-6" />,
 		description:
-			"Follow me on Twitter to stay up-to-date with my latest thoughts, insights, and discussions on web development and technology.",
+			"Send me a message on Slack to chat about potential collaborations, projects, or opportunities... or just to drop by and say hi!",
 	},
 	{
 		name: "LinkedIn",
@@ -34,6 +30,27 @@ export const socials: Social[] = [
 		icon: <LinkedInLogoIcon className="h-6 w-6" />,
 		description:
 			"Connect with me on LinkedIn to learn more about my professional experience, skills, and career journey in the software engineering industry.",
+	},
+	{
+		name: "Microsoft Store",
+		link: "https://apps.microsoft.com/search/publisher?name=Alpha+Romer+Coma",
+		icon: <FaMicrosoft className="h-6 w-6" />,
+		description:
+			"Check out my Microsoft Store profile to see my latest Windows apps and games.",
+	},
+	{
+		name: "Google Play Store",
+		link: "https://play.google.com/store/apps/developer?id=Alpha+Romer+Coma",
+		icon: <FaGooglePlay className="h-6 w-6" />,
+		description:
+			"Check out my Google Play Store profile to see my latest Android apps and games.",
+	},
+	{
+		name: "YouTube",
+		link: "https://www.youtube.com/@alphacoma18",
+		icon: <FaYoutube className="h-6 w-6" />,
+		description:
+			"Subscribe to my YouTube channel to watch my latest tech tutorials, live streams, career advices, software development content.",
 	},
 ];
 
@@ -66,7 +83,7 @@ const Socials = () => {
 			<div className="container grid gap-8 px-4 md:px-6 lg:grid-cols-1">
 				<div className="space-y-4 text-center">
 					<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-						Connect with Me
+						Let&apos;s Connect!
 					</h2>
 					<p className="max-w-[600px] mx-auto text-gray-500 dark:text-gray-400 md:text-xl">
 						Follow me on my social media platforms to stay up-to-date with my
