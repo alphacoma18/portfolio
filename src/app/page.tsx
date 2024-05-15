@@ -8,6 +8,7 @@ import NavBar from "@/components/home/NavBar";
 import Projects from "@/components/home/Projects";
 import Recommendations from "@/components/home/Recommendations";
 import Socials from "@/components/home/Socials";
+import BackToTop from "@/components/home/BackToTop";
 import { NextPage } from "next";
 
 const Home: NextPage = () => {
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
 				<Recommendations />
 				<Awards />
 				<Socials />
+				<BackToTop />
 			</main>
 			<Footer />
 		</>
