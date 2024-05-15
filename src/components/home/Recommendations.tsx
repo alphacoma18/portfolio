@@ -15,7 +15,7 @@ const recommendations: Recommendation[] = [
 		content: (
 			<span>
 				What distinguishes Alpha further is his{" "}
-				<span className="bg-blue-300">
+				<span className="bg-blue-300 dark:bg-[#3584e4]">
 					remarkable humility and positive attitude
 				</span>
 				. Despite his impressive credentials and achievements, he remains
@@ -32,7 +32,7 @@ const recommendations: Recommendation[] = [
 		content: (
 			<span>
 				Alpha Romer Coma, my student in design thinking, exhibits a{" "}
-				<span className="bg-blue-300">
+				<span className="bg-blue-300 dark:bg-[#3584e4]">
 					profound passion for academic excellence
 				</span>
 				, evident in the outstanding quality of his work. I eagerly anticipate
@@ -49,8 +49,10 @@ const recommendations: Recommendation[] = [
 				I was Alpha&apos;s Computer Systems Architecture professor, but I
 				didn&apos;t see him just as a student of CSA, he has always given an
 				effort towards class work and{" "}
-				<span className="bg-blue-300">goes beyond what is being asked</span>. I
-				had always admired how you go beyond what classes are always.
+				<span className="bg-blue-300 dark:bg-[#3584e4]">
+					goes beyond what is being asked
+				</span>
+				. I had always admired how you go beyond what classes are always.
 			</span>
 		),
 		path: "/maam_constantino.jpg",
@@ -63,7 +65,7 @@ const recommendations: Recommendation[] = [
 				Alpha consistently performs well academically. His work reflects a deep
 				understanding of the material, and he consistently produces quality
 				assignment. Alpha is{" "}
-				<span className="bg-blue-300">
+				<span className="bg-blue-300 dark:bg-[#3584e4]">
 					exceptionally curious and displays a genuine eagerness to learn
 				</span>
 				. He works well with his fellow classmates and is evident that he is a
@@ -78,7 +80,7 @@ const recommendations: Recommendation[] = [
 		content: (
 			<span>
 				Mr. Coma is a development-oriented person, as{" "}
-				<span className="bg-blue-300">
+				<span className="bg-blue-300 dark:bg-[#3584e4]">
 					his passion for the field is unparalleled
 				</span>
 				. His enthusiasm for sharing ideas and collaborating with colleagues
@@ -94,7 +96,7 @@ const recommendations: Recommendation[] = [
 			<span>
 				Mr. Alpha Romer is my data structure student. He is industrious and
 				knowledgeable in computer programming. He is a multilingual person and a{" "}
-				<span className="bg-blue-300">
+				<span className="bg-blue-300 dark:bg-[#3584e4]">
 					very competitive when it comes to project submissions
 				</span>
 				. He can be a candidate for intern software development in the future of
@@ -110,7 +112,7 @@ const recommendations: Recommendation[] = [
 			<span>
 				Alpha is an amazing team player, who always steps up his game especially
 				in developing a program. He is{" "}
-				<span className="bg-blue-300">
+				<span className="bg-blue-300 dark:bg-[#3584e4]">
 					really adept at adapting in unfavorable situations
 				</span>
 				, and his skills to turn the tide in our team&apos;s favor is
@@ -125,8 +127,10 @@ const recommendations: Recommendation[] = [
 		content: (
 			<span>
 				Mr. Coma is an{" "}
-				<span className="bg-blue-300">excellent teammate you can rely on</span>.
-				We both honed our skills through simultaneous exchange of ideas or
+				<span className="bg-blue-300 dark:bg-[#3584e4]">
+					excellent teammate you can rely on
+				</span>
+				. We both honed our skills through simultaneous exchange of ideas or
 				solutions whether it may be design-related or code-related. Learning
 				with Mr. Coma is such a pleasure.
 			</span>
@@ -175,7 +179,7 @@ const Recommendation: React.FC<Recommendation> = ({
 
 const Recommendations: React.FC = () => {
 	return (
-		<section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-800">
+		<section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-950">
 			<div className="container grid gap-8 px-4 md:px-6 lg:grid-cols-1">
 				<div className="space-y-4 text-center">
 					<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
