@@ -15,7 +15,7 @@ const certificates: Certificate[] = [
 		issuer: "Harvard University",
 	},
 	{
-		name: "CS50x Verfied Certificate",
+		name: "CS50x Verified Certificate",
 		image: "/edx_cs50x.png",
 		link: "https://courses.edx.org/certificates/bb4919bf719f468c833b6e7555c3f337",
 		issuer: "edX",
