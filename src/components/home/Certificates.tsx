@@ -126,7 +126,7 @@ const Certificates = () => {
 					development.
 				</p>
 			</div>
-			<div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 px-4 md:px-6">
+			<div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 px-4 md:px-6">
 				{certificates.map((certificate, index) => (
 					<Certificate key={index} {...certificate} />
 				))}

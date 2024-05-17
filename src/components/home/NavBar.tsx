@@ -2,10 +2,10 @@
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { CgProfile } from "react-icons/cg";
-import { CiGlobe } from "react-icons/ci";
 import {
 	FaBlog,
 	FaChalkboardTeacher,
@@ -13,6 +13,7 @@ import {
 	FaImages,
 	FaRocket,
 } from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
 import { socials } from "./Socials";
 interface NavLink {
 	name: string;
@@ -54,7 +55,7 @@ const navLinks: NavLink[] = [
 	{
 		name: "Contact",
 		href: "/contact",
-		icon: <CiGlobe className="h-6 w-6" />,
+		icon: <TbWorld className="h-6 w-6" />,
 	},
 ];
 
@@ -69,12 +70,16 @@ const NavBar: React.FC = () => {
 				</Link>
 				<div className="flex items-center gap-4 md:gap-2">
 					<div className="flex items-center gap-2 md:gap-4">
-						{/* <span
+						<span
 							aria-label="Toggle dark mode"
 							onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
 						>
-							<MoonIcon className="h-6 w-6" />
-						</span> */}
+							{theme === "dark" ? (
+								<SunIcon className="h-6 w-6" />
+							) : (
+								<MoonIcon className="h-6 w-6" />
+							)}
+						</span>
 						<Sheet>
 							<SheetTrigger asChild>
 								<Button className="md:hidden" size="icon" variant="outline">
