@@ -4,7 +4,7 @@ import { FaFileAlt } from "react-icons/fa";
 import { MdMessage } from "react-icons/md";
 const Hero: React.FC = () => {
 	return (
-		<section className="w-full py-24 dark:bg-gray-800 relative">
+		<section className="w-full py-24 relative">
 			<Image
 				src={"/media/img/bg/manila.png"}
 				style={{ objectFit: "cover" }}
@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
 					<h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white">
 						Hey, I&apos;m Alpha! 👋
 					</h1>
-					<p className="max-w-[600px] text-white dark:text-gray-400 md:text-xl">
+					<p className="max-w-[600px] text-white md:text-xl">
 						I&apos;m a professional{" "}
 						<span className="font-black">Software Engineer</span> with a passion
 						for building bleeding-edge and innovative applications that solve
