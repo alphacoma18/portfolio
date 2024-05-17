@@ -190,7 +190,7 @@ const Recommendations: React.FC = () => {
 						experience working with me.
 					</p>
 				</div>
-				<div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+				<div className="grid gap-6 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4">
 					{recommendations.map((recommendation, index) => (
 						<Recommendation key={index} {...recommendation} />
 					))}
