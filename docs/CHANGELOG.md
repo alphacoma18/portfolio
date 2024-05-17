@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/alphacoma18/portfolio/compare/v1.0.2...v1.1.0) (2024-05-17)
+
+
+### Features
+
+* homepage release w/ dark mode ([b0cd25f](https://github.com/alphacoma18/portfolio/commit/b0cd25fb60b07b7b3dd7532fc6f8dc70840a645d))
+
 ## [1.0.2](https://github.com/alphacoma18/portfolio/compare/v1.0.1...v1.0.2) (2024-05-15)
 
 
