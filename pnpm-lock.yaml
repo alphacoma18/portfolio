@@ -25,6 +25,9 @@ importers:
       "@prisma/extension-accelerate":
         specifier: ^1.0.0
         version: 1.0.0(@prisma/client@5.14.0(prisma@5.14.0))
+      "@radix-ui/react-collapsible":
+        specifier: ^1.0.3
+        version: 1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       "@radix-ui/react-dialog":
         specifier: ^1.0.5
         version: 1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1920,10 +1923,10 @@ packages:
         integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==,
       }
 
-  "@maxim_mazurok/gapi.client.androidpublisher-v3@0.0.20240514":
+  "@maxim_mazurok/gapi.client.androidpublisher-v3@0.0.20240516":
     resolution:
       {
-        integrity: sha512-wlGlzoDxCLp/DQ8e7LYYBxSPfquWOkFS1NVzGBFeOAgCEHSzJMsXHtgBDqJXg4iwcscmC7QjvSZ33Wx+62MhVA==,
+        integrity: sha512-JFYV9T2w5Ou8BK2Z3tcMptJWq91lpjprXSP4060utNEd/oaY22G+HDT2bMeXh8bY7hy5Ru7K+8LexK9NPnl+Ew==,
       }
 
   "@maxim_mazurok/gapi.client.discovery-v1@0.1.20200806":
@@ -2323,6 +2326,22 @@ packages:
       {
         integrity: sha512-yQ8oGX2GVsEYMWGxcovu1uGWPCxV5BFfeeYxqPmuAzUyLT9qmaMXSAhXpb0WrspIeqYzdJpkh2vHModJPgRIaw==,
       }
+
+  "@radix-ui/react-collapsible@1.0.3":
+    resolution:
+      {
+        integrity: sha512-UBmVDkmR6IvDsloHVN+3rtx4Mi5TFvylYXpluuv0f37dtaz3H99bp8No0LGXRigVpl3UAT4l9j6bIchh42S/Gg==,
+      }
+    peerDependencies:
+      "@types/react": "*"
+      "@types/react-dom": "*"
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
+    peerDependenciesMeta:
+      "@types/react":
+        optional: true
+      "@types/react-dom":
+        optional: true
 
   "@radix-ui/react-compose-refs@1.0.1":
     resolution:
@@ -11413,7 +11432,7 @@ snapshots:
       "@jridgewell/resolve-uri": 3.1.2
       "@jridgewell/sourcemap-codec": 1.4.15
 
-  "@maxim_mazurok/gapi.client.androidpublisher-v3@0.0.20240514":
+  "@maxim_mazurok/gapi.client.androidpublisher-v3@0.0.20240516":
     dependencies:
       "@types/gapi.client": 1.0.8
       "@types/gapi.client.discovery-v1": 0.0.4
@@ -11616,6 +11635,23 @@ snapshots:
   "@radix-ui/primitive@1.0.1":
     dependencies:
       "@babel/runtime": 7.24.5
+
+  "@radix-ui/react-collapsible@1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)":
+    dependencies:
+      "@babel/runtime": 7.24.5
+      "@radix-ui/primitive": 1.0.1
+      "@radix-ui/react-compose-refs": 1.0.1(@types/react@18.3.2)(react@18.3.1)
+      "@radix-ui/react-context": 1.0.1(@types/react@18.3.2)(react@18.3.1)
+      "@radix-ui/react-id": 1.0.1(@types/react@18.3.2)(react@18.3.1)
+      "@radix-ui/react-presence": 1.0.1(@types/react-dom@18.3.0)(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      "@radix-ui/react-primitive": 1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      "@radix-ui/react-use-controllable-state": 1.0.1(@types/react@18.3.2)(react@18.3.1)
+      "@radix-ui/react-use-layout-effect": 1.0.1(@types/react@18.3.2)(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    optionalDependencies:
+      "@types/react": 18.3.2
+      "@types/react-dom": 18.3.0
 
   "@radix-ui/react-compose-refs@1.0.1(@types/react@18.3.2)(react@18.3.1)":
     dependencies:
@@ -12227,7 +12263,7 @@ snapshots:
 
   "@types/gapi.client.androidpublisher@3.0.2":
     dependencies:
-      "@maxim_mazurok/gapi.client.androidpublisher-v3": 0.0.20240514
+      "@maxim_mazurok/gapi.client.androidpublisher-v3": 0.0.20240516
 
   "@types/gapi.client.discovery-v1@0.0.4":
     dependencies:
