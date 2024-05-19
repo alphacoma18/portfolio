@@ -9,6 +9,7 @@ import Projects from "@/components/home/Projects";
 import Recommendations from "@/components/home/Recommendations";
 import Socials from "@/components/home/Socials";
 import BackToTop from "@/components/home/BackToTop";
+import Skills from "@/components/home/Skills";
 import { NextPage } from "next";
 
 const Home: NextPage = () => {
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
 			<main className="pt-16">
 				<Hero />
 				<Competencies />
+				<Skills />
 				<Projects />
 				<Certificates />
 				<Affiliations />
