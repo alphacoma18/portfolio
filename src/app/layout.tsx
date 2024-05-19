@@ -18,20 +18,20 @@ const fontSans = FontSans({
 	subsets: ["latin"],
 });
 
-// import "src/styles/globals.css";
 import ChildrenProps from "types/ChildrenProps";
 const metaData = {
 	app_name: "Alpha Romer Coma",
 	title: "Alpha Romer Coma",
 	url: env.NEXT_PUBLIC_HOST_URL,
-	description: "",
+	description:
+		"Welcome to my portfolio website! I am Alpha Romer Coma, a professional Software Engineer with a passion for building bleeding-edge and innovative applications that solve real world problems. Pleasure to meet you!",
 	iconURL: `${env.NEXT_PUBLIC_HOST_URL}/android-chrome-512x512.png`,
 	emails: ["alpha.coma.ict@gmail.com"],
 };
 const { app_name, url, description, title, iconURL, emails } = metaData;
 
 export const viewport: Viewport = {
-	themeColor: "",
+	themeColor: "#09090b",
 	colorScheme: "dark",
 	viewportFit: "cover",
 	interactiveWidget: "resizes-visual",
@@ -96,8 +96,8 @@ export const metadata: Metadata = {
 		name: "Alpha Romer Coma",
 		url: "https://www.linkedin.com/in/alpharomercoma/",
 	},
-	category: "",
-	classification: "",
+	category: "personalization",
+	classification: "personal",
 	creator: "Alpha Romer Coma",
 	description,
 	formatDetection: {
@@ -107,14 +107,36 @@ export const metadata: Metadata = {
 		{ rel: "icon", url: iconURL },
 		{ rel: "apple-touch-icon", url: iconURL },
 	],
-	keywords: "",
+	keywords: [
+		"Alpha Romer Coma",
+		"software",
+		"engineer",
+		"software engineer",
+		"full-stack",
+		"developer",
+		"blog",
+		"portfolio",
+		"personal",
+		"website",
+	],
 	manifest: "/manifest.webmanifest",
 	metadataBase: new URL(url),
 	openGraph: {
 		description,
 		images: [
 			{
-				url: "",
+				url: "/media/img/self/google.jpg",
+				alt: "Alpha x Google",
+				type: "image/jpeg",
+				height: 1080,
+				width: 1920,
+			},
+			{
+				url: "/media/img/self/microsoft.jpg",
+				alt: "Alpha x Microsoft",
+				type: "image/jpeg",
+				height: 1080,
+				width: 1920,
 			},
 		],
 		siteName: app_name,
@@ -136,14 +158,15 @@ export const metadata: Metadata = {
 	referrer: "no-referrer",
 	twitter: {
 		card: "summary_large_image",
-		site: "@alpharomercoma",
-		creator: "@alpharomercoma",
-		images: "",
+		site: "@senodesuzo",
+		description,
+		creator: "@senodesuzo",
+		images: "/media/img/self/google.jpg",
 	},
 	verification: {
-		google: "",
-		yandex: "",
-		yahoo: "",
+		google: "2in3E6-sO1ECsHoqvnGdo58dv0QAcB_Rm5lNB-FA6R8",
+		yandex: "dcd493d013947734",
+		yahoo: "E01A119E5EAA9A5963570A31EA4A5058",
 		me: "",
 	},
 };

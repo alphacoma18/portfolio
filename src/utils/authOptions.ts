@@ -22,7 +22,7 @@ export const authOptions: NextAuthOptions = {
 	],
 	theme: {
 		colorScheme: "dark",
-		brandColor: "",
+		brandColor: "#09090b",
 		logo: `${env.HOST_URL}/android-chrome-256x256.png`,
 		buttonText: "",
 	},

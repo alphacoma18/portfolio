@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: http://localhost:3000
+Host: https://alpharomer.vercel.app
 
 # Sitemaps
-Sitemap: http://localhost:3000/sitemap.xml
+Sitemap: https://alpharomer.vercel.app/sitemap.xml

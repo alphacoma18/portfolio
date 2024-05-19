@@ -1,8 +1,8 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"background_color": "#3d0007",
-	"categories": ["education", "events", "news", "reference"],
-	"description": "Alpha Romer Coma Portfolio",
+	"categories": ["education", "events", "news", "reference", "personalization"],
+	"description": "Alpha Romer Coma",
 	"dir": "ltr",
 	"display": "standalone",
 	"display_override": [
@@ -78,7 +78,7 @@
 			"purpose": "maskable"
 		}
 	],
-	"id": "/",
+	"id": "https://alpharomer.vercel.app",
 	"iarc_rating_id": "",
 	"lang": "en",
 	"launch_handler": {
@@ -111,5 +111,5 @@
 		}
 	],
 	"start_url": "https://alpharomer.vercel.app",
-	"theme_color": "#3d0007"
+	"theme_color": "#09090b"
 }
