@@ -6,12 +6,14 @@ interface Recommendation {
 	position: string;
 	content: React.ReactNode;
 	path: string;
+	receiveMonth: number;
+	receivedYear: number;
 }
 
 const recommendations: Recommendation[] = [
 	{
 		name: "Justine Jude Pura, MBA",
-		position: "Computer Science Department",
+		position: "CS Department @FEU Tech",
 		content: (
 			<span>
 				What distinguishes Alpha further is his{" "}
@@ -25,10 +27,12 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/sir_pura.jpg",
+		receiveMonth: 3,
+		receivedYear: 2024,
 	},
 	{
 		name: "Jeneffer Sabonsolin",
-		position: "Computer Science Department",
+		position: "CS Department @FEU Tech",
 		content: (
 			<span>
 				Alpha Romer Coma, my student in design thinking, exhibits a{" "}
@@ -40,10 +44,12 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/sir_sabonsolin.jpg",
+		receiveMonth: 3,
+		receivedYear: 2024,
 	},
 	{
 		name: "Michelle Anne Constantino",
-		position: "Computer Science Department",
+		position: "CS Department @FEU Tech",
 		content: (
 			<span>
 				I was Alpha&apos;s Computer Systems Architecture professor, but I
@@ -56,10 +62,12 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/maam_constantino.jpg",
+		receiveMonth: 12,
+		receivedYear: 2023,
 	},
 	{
 		name: "Beau Gray Habal",
-		position: "Computer Science Department",
+		position: "CS Department @FEU Tech",
 		content: (
 			<span>
 				Alpha consistently performs well academically. His work reflects a deep
@@ -73,10 +81,12 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/default.jpg",
+		receiveMonth: 1,
+		receivedYear: 2024,
 	},
 	{
 		name: "John Kenneth Andales",
-		position: "Computer Science Department",
+		position: "Software Engineer @Samsung",
 		content: (
 			<span>
 				Mr. Coma is a development-oriented person, as{" "}
@@ -88,10 +98,12 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/sir_andales.jpg",
+		receiveMonth: 3,
+		receivedYear: 2023,
 	},
 	{
 		name: "Angelo Arguson, DIT",
-		position: "Computer Science Department",
+		position: "CS Department @FEU Tech",
 		content: (
 			<span>
 				Mr. Alpha Romer is my data structure student. He is industrious and
@@ -104,10 +116,12 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/default.jpg",
+		receiveMonth: 7,
+		receivedYear: 2023,
 	},
 	{
 		name: "Xynil Jhed Lacap",
-		position: "Software Engineer",
+		position: "BSCSSE Student @FEU Tech",
 		content: (
 			<span>
 				Alpha is an amazing team player, who always steps up his game especially
@@ -120,10 +134,12 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/lacap.jpg",
+		receiveMonth: 3,
+		receivedYear: 2024,
 	},
 	{
 		name: "John Rey Basilio",
-		position: "Software Engineer",
+		position: "After Sales Support @Concentrix",
 		content: (
 			<span>
 				Mr. Coma is an{" "}
@@ -136,14 +152,21 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/basilio.jpg",
+		receivedYear: 2023,
+		receiveMonth: 2,
 	},
 ];
+
+import numToMonth from "@/utils/dates/numToMon";
+import sortDates from "@/utils/dates/sortDates";
 
 const Recommendation: React.FC<Recommendation> = ({
 	name,
 	position,
 	content,
 	path,
+	receiveMonth,
+	receivedYear,
 }) => {
 	return (
 		<Card>
@@ -170,12 +193,24 @@ const Recommendation: React.FC<Recommendation> = ({
 						<div className="text-sm text-gray-500 dark:text-gray-400">
 							{position}
 						</div>
+						<p className="text-sm text-gray-500 dark:text-gray-400">
+							Received on {numToMonth(receiveMonth)} {receivedYear}
+						</p>
 					</div>
 				</div>
 			</CardContent>
 		</Card>
 	);
 };
+
+const sortedRecDesc = sortDates(
+	recommendations,
+	({ receivedYear, receiveMonth }) => ({
+		year: receivedYear,
+		month: receiveMonth,
+	}),
+	true,
+);
 
 const Recommendations: React.FC = () => {
 	return (
@@ -191,7 +226,7 @@ const Recommendations: React.FC = () => {
 					</p>
 				</div>
 				<div className="grid gap-6 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4">
-					{recommendations.map((recommendation, index) => (
+					{sortedRecDesc.map((recommendation, index) => (
 						<Recommendation key={index} {...recommendation} />
 					))}
 				</div>

@@ -575,7 +575,7 @@ const Category = ({ name, skills, icon }: Category) => {
 	const Icon = setIconDims(icon);
 	return (
 		<Collapsible className="rounded-lg border bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950 hover:shadow-lg transition-shadow duration-300">
-			<CollapsibleTrigger className="flex items-center justify-between gap-4 px-6 py-4 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">
+			<CollapsibleTrigger className="flex items-center justify-between gap-4 px-6 py-4 bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">
 				<div className="flex items-center gap-4">
 					{Icon}
 					<h3 className="text-lg font-semibold">{name}</h3>
@@ -592,26 +592,24 @@ const Category = ({ name, skills, icon }: Category) => {
 
 const Skills = () => {
 	return (
-		<>
-			<section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-950">
-				<div className="container grid gap-8 px-4 md:px-6 lg:grid-cols-1">
-					<div className="space-y-4 text-center">
-						<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-							Skills & Technologies
-						</h2>
-						<p className="max-w-[600px] mx-auto text-gray-500 dark:text-gray-400 md:text-xl">
-							I have experience working with a range of technologies and tools.
-							Here are some of the key skills I have developed over the years.
-						</p>
-					</div>
-					<div className="grid gap-4 md:grid-cols-2">
-						{skills.map((category) => (
-							<Category key={category.name} {...category} />
-						))}
-					</div>
+		<section className="w-full grid gap-8 py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+			<div className="container grid gap-8 px-4 md:px-6 lg:grid-cols-1">
+				<div className="space-y-4 text-center">
+					<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+						Skills & Technologies
+					</h2>
+					<p className="max-w-[600px] mx-auto text-gray-500 dark:text-gray-400 md:text-xl">
+						I have experience working with a range of technologies and tools.
+						Here are some of the key skills I have developed over the years.
+					</p>
 				</div>
-			</section>
-		</>
+				<div className="grid gap-4 md:grid-cols-2">
+					{skills.map((category) => (
+						<Category key={category.name} {...category} />
+					))}
+				</div>
+			</div>
+		</section>
 	);
 };
 

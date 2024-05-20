@@ -77,7 +77,7 @@ const Project: React.FC<Project> = ({ title, description, image, link }) => {
 
 const Projects: React.FC = () => {
 	return (
-		<section className="w-full grid gap-8 py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+		<section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-950">
 			<div className="space-y-4 text-center">
 				<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
 					My Treasured Projects
