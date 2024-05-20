@@ -6,6 +6,8 @@ interface Recommendation {
 	position: string;
 	content: React.ReactNode;
 	path: string;
+	receiveMonth: number;
+	receivedYear: number;
 }
 
 const recommendations: Recommendation[] = [
@@ -25,6 +27,8 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/sir_pura.jpg",
+		receiveMonth: 3,
+		receivedYear: 2024,
 	},
 	{
 		name: "Jeneffer Sabonsolin",
@@ -40,6 +44,8 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/sir_sabonsolin.jpg",
+		receiveMonth: 3,
+		receivedYear: 2024,
 	},
 	{
 		name: "Michelle Anne Constantino",
@@ -56,6 +62,8 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/maam_constantino.jpg",
+		receiveMonth: 12,
+		receivedYear: 2023,
 	},
 	{
 		name: "Beau Gray Habal",
@@ -73,6 +81,8 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/default.jpg",
+		receiveMonth: 1,
+		receivedYear: 2024,
 	},
 	{
 		name: "John Kenneth Andales",
@@ -88,6 +98,8 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/sir_andales.jpg",
+		receiveMonth: 3,
+		receivedYear: 2023,
 	},
 	{
 		name: "Angelo Arguson, DIT",
@@ -104,6 +116,8 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/default.jpg",
+		receiveMonth: 7,
+		receivedYear: 2023,
 	},
 	{
 		name: "Xynil Jhed Lacap",
@@ -120,6 +134,8 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/lacap.jpg",
+		receiveMonth: 3,
+		receivedYear: 2024,
 	},
 	{
 		name: "John Rey Basilio",
@@ -136,14 +152,21 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/basilio.jpg",
+		receiveMonth: 12,
+		receivedYear: 2022,
 	},
 ];
+
+import numToMonth from "@/utils/dates/numToMon";
+import sortDates from "@/utils/dates/sortDates";
 
 const Recommendation: React.FC<Recommendation> = ({
 	name,
 	position,
 	content,
 	path,
+	receiveMonth,
+	receivedYear,
 }) => {
 	return (
 		<Card>
@@ -170,12 +193,24 @@ const Recommendation: React.FC<Recommendation> = ({
 						<div className="text-sm text-gray-500 dark:text-gray-400">
 							{position}
 						</div>
+						<p className="text-sm text-gray-500 dark:text-gray-400">
+							Received on {numToMonth(receiveMonth)} {receivedYear}
+						</p>
 					</div>
 				</div>
 			</CardContent>
 		</Card>
 	);
 };
+
+const sortedRecDesc = sortDates(
+	recommendations,
+	({ receivedYear, receiveMonth }) => ({
+		year: receivedYear,
+		month: receiveMonth,
+	}),
+	true,
+);
 
 const Recommendations: React.FC = () => {
 	return (
@@ -191,7 +226,7 @@ const Recommendations: React.FC = () => {
 					</p>
 				</div>
 				<div className="grid gap-6 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4">
-					{recommendations.map((recommendation, index) => (
+					{sortedRecDesc.map((recommendation, index) => (
 						<Recommendation key={index} {...recommendation} />
 					))}
 				</div>
