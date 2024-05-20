@@ -13,7 +13,7 @@ interface Recommendation {
 const recommendations: Recommendation[] = [
 	{
 		name: "Justine Jude Pura, MBA",
-		position: "Computer Science Department",
+		position: "CS Department @FEU Tech",
 		content: (
 			<span>
 				What distinguishes Alpha further is his{" "}
@@ -32,7 +32,7 @@ const recommendations: Recommendation[] = [
 	},
 	{
 		name: "Jeneffer Sabonsolin",
-		position: "Computer Science Department",
+		position: "CS Department @FEU Tech",
 		content: (
 			<span>
 				Alpha Romer Coma, my student in design thinking, exhibits a{" "}
@@ -49,7 +49,7 @@ const recommendations: Recommendation[] = [
 	},
 	{
 		name: "Michelle Anne Constantino",
-		position: "Computer Science Department",
+		position: "CS Department @FEU Tech",
 		content: (
 			<span>
 				I was Alpha&apos;s Computer Systems Architecture professor, but I
@@ -67,7 +67,7 @@ const recommendations: Recommendation[] = [
 	},
 	{
 		name: "Beau Gray Habal",
-		position: "Computer Science Department",
+		position: "CS Department @FEU Tech",
 		content: (
 			<span>
 				Alpha consistently performs well academically. His work reflects a deep
@@ -86,7 +86,7 @@ const recommendations: Recommendation[] = [
 	},
 	{
 		name: "John Kenneth Andales",
-		position: "Computer Science Department",
+		position: "Software Engineer @Samsung",
 		content: (
 			<span>
 				Mr. Coma is a development-oriented person, as{" "}
@@ -103,7 +103,7 @@ const recommendations: Recommendation[] = [
 	},
 	{
 		name: "Angelo Arguson, DIT",
-		position: "Computer Science Department",
+		position: "CS Department @FEU Tech",
 		content: (
 			<span>
 				Mr. Alpha Romer is my data structure student. He is industrious and
@@ -121,7 +121,7 @@ const recommendations: Recommendation[] = [
 	},
 	{
 		name: "Xynil Jhed Lacap",
-		position: "Software Engineer",
+		position: "BSCSSE Student @FEU Tech",
 		content: (
 			<span>
 				Alpha is an amazing team player, who always steps up his game especially
@@ -139,7 +139,7 @@ const recommendations: Recommendation[] = [
 	},
 	{
 		name: "John Rey Basilio",
-		position: "Software Engineer",
+		position: "After Sales Support @Concentrix",
 		content: (
 			<span>
 				Mr. Coma is an{" "}
@@ -152,8 +152,8 @@ const recommendations: Recommendation[] = [
 			</span>
 		),
 		path: "/basilio.jpg",
-		receiveMonth: 12,
-		receivedYear: 2022,
+		receivedYear: 2023,
+		receiveMonth: 2,
 	},
 ];
 
