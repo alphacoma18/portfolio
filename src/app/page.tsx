@@ -19,8 +19,8 @@ const Home: NextPage = () => {
 			<main className="pt-16">
 				<Hero />
 				<Competencies />
-				<Skills />
 				<Projects />
+				<Skills />
 				<Certificates />
 				<Affiliations />
 				<Recommendations />
