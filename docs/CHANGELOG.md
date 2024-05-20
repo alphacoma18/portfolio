@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/alphacoma18/portfolio/compare/v1.1.0...v1.1.1) (2024-05-20)
+
+
+### Bug Fixes
+
+* robots.txt to prod url ([165d130](https://github.com/alphacoma18/portfolio/commit/165d130e8fc3202c75882a0c866feacf1085181f))
+
 # [1.1.0](https://github.com/alphacoma18/portfolio/compare/v1.0.2...v1.1.0) (2024-05-17)
 
 
