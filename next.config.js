@@ -80,6 +80,7 @@ const nextConfig = {
     ],
   },
   experimental: {
+    reactCompiler: true,
     optimizeCss: true,
     optimizeServerReact: true,
     appDocumentPreloading: true,
@@ -107,7 +108,7 @@ const nextConfig = {
     nextScriptWorkers: true,
     webVitalsAttribution: ['CLS', 'LCP'],
   },
-  async headers () {
+  async headers() {
     return [
       {
         // Apply these headers to all routes in your application.
