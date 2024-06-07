@@ -1,7 +1,68 @@
+"use client";
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-import Link from "next/link";
 import { FaFileAlt } from "react-icons/fa";
 import { MdMessage } from "react-icons/md";
+
+interface CarouselItem {
+	src: string;
+	alt: string;
+}
+
+const carouselItems: CarouselItem[] = [
+	{
+		src: "/media/img/self/google.jpg",
+		alt: "Google",
+	},
+	{
+		src: "/media/img/self/microsoft_2.jpg",
+		alt: "Microsoft",
+	},
+	{
+		src: "/media/img/self/ipbf.jpg",
+		alt: "IPBF",
+	},
+	{
+		src: "/media/img/self/adb.jpg",
+		alt: "ADB",
+	},
+	{
+		src: "/media/img/self/aws.jpg",
+		alt: "AWS",
+	},
+];
+
+const HeroCarousel: React.FC = () => {
+	return (
+		<Carousel
+			className="w-full h-full"
+			plugins={[
+				Autoplay({
+					delay: 2000,
+				}),
+			]}
+		>
+			<CarouselContent>
+				{carouselItems.map((item, index) => (
+					<CarouselItem key={index} className="relative w-full aspect-video">
+						<Image
+							fill
+							src={item.src}
+							alt={item.alt}
+							className="w-full aspect-video object-cover rounded-md"
+						/>
+					</CarouselItem>
+				))}
+			</CarouselContent>
+		</Carousel>
+	);
+};
+
 const Hero: React.FC = () => {
 	return (
 		<section className="w-full py-24 relative">
@@ -44,16 +105,8 @@ const Hero: React.FC = () => {
 						</a>
 					</div>
 				</div>
-				<div className="flex rounded-lg justify-center w-full items-center relative aspect-video">
-					<Image
-						alt="Jared Palmer"
-						style={{
-							objectFit: "contain",
-						}}
-						className="rounded-sm"
-						fill
-						src="/media/img/self/google.jpg"
-					/>
+				<div className="relative w-full">
+					<HeroCarousel />
 				</div>
 			</div>
 		</section>
