@@ -23,6 +23,11 @@ const affiliations: Affiliation[] = [
 		role: ["Former Front-End Lead Developer"],
 	},
 	{
+		company: "Google Developer Groups Cloud Manila",
+		image: "/gdgc.jpg",
+		role: ["Volunteer"],
+	},
+	{
 		company: "Institute of Electrical and Electronics Engineers",
 		image: "/ieee.png",
 		role: ["Volunteer"],
@@ -41,6 +46,11 @@ const affiliations: Affiliation[] = [
 		company: "Skilio",
 		image: "/skilio.png",
 		role: ["Scholar Fellow"],
+	},
+	{
+		company: "ULAP.org",
+		image: "/ulap.png",
+		role: ["Scholar"],
 	},
 	{
 		company: "GitHub",
@@ -100,7 +110,7 @@ const Affiliations: React.FC = () => {
 						organizations.
 					</p>
 				</div>
-				<div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+				<div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
 					{affiliations.map((affiliation, index) => (
 						<Affiliation key={index} {...affiliation} />
 					))}
