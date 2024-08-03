@@ -1,82 +1,18 @@
 import Image from "next/image";
+import { portfolio, Portfolio } from "@/utils/exports/exports";
 
-interface Affiliation {
-	company: string;
-	image: string;
-	role: string[];
-}
-
-const affiliations: Affiliation[] = [
-	{
-		company: "FEU Institute of Technology",
-		image: "/fit.png",
-		role: ["President's Scholar w/ High Honors"],
-	},
-	{
-		company: "FEU Tech ACM",
-		image: "/fit_acm.png",
-		role: ["Webmaster", "Former Director for Academics"],
-	},
-	{
-		company: "FEU Tech GDSC",
-		image: "/fit_gdsc.png",
-		role: ["Former Front-End Lead Developer"],
-	},
-	{
-		company: "Google Developer Groups Cloud Manila",
-		image: "/gdgc.jpg",
-		role: ["Volunteer"],
-	},
-	{
-		company: "Institute of Electrical and Electronics Engineers",
-		image: "/ieee.png",
-		role: ["Volunteer"],
-	},
-	{
-		company: "IEEE Computer Society",
-		image: "/ieee_cs.png",
-		role: ["Member"],
-	},
-	{
-		company: "Logrocket",
-		image: "/logrocket.png",
-		role: ["Content Advisory Board Member"],
-	},
-	{
-		company: "Skilio",
-		image: "/skilio.png",
-		role: ["Scholar Fellow"],
-	},
-	{
-		company: "ULAP.org",
-		image: "/ulap.png",
-		role: ["Scholar"],
-	},
-	{
-		company: "GitHub",
-		image: "/github.png",
-		role: ["FOSS Contributor"],
-	},
-	{
-		company: "Google Play",
-		image: "/google_play.png",
-		role: ["App Developer"],
-	},
-	{
-		company: "Microsoft Store",
-		image: "/ms_store.png",
-		role: ["App Developer"],
-	},
-];
-
-const Affiliation: React.FC<Affiliation> = ({ company, image, role }) => {
+const Affiliation: React.FC<Portfolio["affiliations"][number]> = ({
+	company,
+	roles,
+	image,
+}) => {
 	return (
 		<div className="group relative flex items-center justify-center overflow-hidden rounded-lg">
 			<Image
-				alt="Logo"
+				alt={company}
 				className="w-full h-full object-contain object-center transition-all group-hover:scale-110"
 				height={140}
-				src={`/media/img/affilitions${image}`}
+				src={`/media/img/affilitions/${image}`}
 				style={{
 					aspectRatio: "280/140",
 					objectFit: "contain",
@@ -86,7 +22,7 @@ const Affiliation: React.FC<Affiliation> = ({ company, image, role }) => {
 			<div className="absolute inset-0 flex items-center justify-center bg-gray-900/80 opacity-0 transition-opacity group-hover:opacity-100">
 				<div className="text-center text-gray-50">
 					<h3 className="text-lg font-semibold">{company}</h3>
-					{role.map((r) => (
+					{roles.map((r) => (
 						<p key={r} className="text-sm">
 							{r}
 						</p>
@@ -111,7 +47,7 @@ const Affiliations: React.FC = () => {
 					</p>
 				</div>
 				<div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-					{affiliations.map((affiliation, index) => (
+					{portfolio.affiliations.map((affiliation, index) => (
 						<Affiliation key={index} {...affiliation} />
 					))}
 				</div>

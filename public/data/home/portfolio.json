@@ -1,0 +1,449 @@
+{
+	"name": "Alpha Romer Coma",
+	"title": "Software Engineer",
+	"profile": "Voracious & Relentless Multilingual Software Developer on a Mission to Advance Computing for Humanity",
+	"hero_carousel_images": ["/hero1.jpg"],
+	"contact": {
+		"email": "alpharomercoma@proton.me",
+		"phone": "+639762731890",
+		"website": "https://alpharomercoma.vercel.app",
+		"linkedin": "https://www.linkedin.com/in/alpharomercoma",
+		"github": "https://www.linkedin.com/in/alphacoma18",
+		"google_play": "https://play.google.com/store/apps/dev?id=8475868964031287315",
+		"microsoft_store": "https://apps.microsoft.com/search/publisher?name=Alpha+Romer+Coma&hl"
+	},
+	"skills": {
+		"frontend": [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"TypeScript",
+			"React",
+			"NextJS",
+			"Tailwind"
+		],
+		"backend": ["NodeJS", "Express"],
+		"devops": ["Docker", "Kubernetes"],
+		"version_control": ["Git", "GitHub", "GitLab", "BitBucket"],
+		"database": ["MySQL", "MongoDB", "PostgreSQL", "Prisma"],
+		"cloud": ["AWS", "Google Cloud", "Azure", "Oracle", "Vercel"]
+	},
+	"projects": [
+		{
+			"name": "FEU Tech ACM-X",
+			"description": [
+				"Official and premier cross-platform application of The FEU Tech ACM organization",
+				"Automate 90,000+ Undertaking PDF generations per year",
+				"Streamline 2,000+ event registration, attendance, and certificate generation per term",
+				"Serve 4,000+ Tamaraw students and faculty daily via general computing, event updates, and inboxing",
+				"Released on 4 major stores including Google Play Store, Microsoft Store, Xiaomi GetApps, & Huawei App Gallery"
+			],
+			"start_year": 2023,
+			"end_year": -1
+		},
+		{
+			"name": "Markdown Studio",
+			"description": [
+				"The modern cross-platform note-taking & blogging application built on bleeding-edge technologies",
+				"200+ users on Google Play Store and Microsoft Store"
+			],
+			"start_year": 2023,
+			"end_year": -1
+		}
+	],
+	"organizations": [
+		{
+			"name": "Google Developer Groups Cloud Manila",
+			"position": "Volunteer",
+			"start_year": 2024,
+			"end_year": -1,
+			"description": [
+				"Assisted in organizing Google I/O Extended x Build with AI event with 400+ attendees at Ateneo de Manila University",
+				"Served as speaker relations for 9 in-person event speakers"
+			]
+		},
+		{
+			"name": "FEU Tech Association for Computing Machinery",
+			"position": "Initiative Head",
+			"description": [
+				"Founded the ACM Beyond Campus Initiative to propel 500+ ACM members to become globally competitive",
+				"Aggregated 100+ events, certifications, scholarships, internships, hackathons, and programming competitions",
+				"Saved over $2000 on official GitHub Certifications Exams for organization upskilling across 30+ members in 5 days",
+				"Redeemed over $1200 on Oracle's Generative AI Professional Certification for 5 members",
+				"Established partnerships with 2 leading technology industry companies"
+			],
+			"start_year": 2023,
+			"end_year": 2024
+		},
+		{
+			"name": "FEU Tech Association for Computing Machinery",
+			"position": "Webmaster",
+			"description": [
+				"Migrated Laravel Codebase to modern NextJS deployed in a serverless cloud, running $0 per month",
+				"Led a 10-man team of the organization's software development team",
+				"Guided a team of 18 software developers for the web exposition of their thesis projects",
+				"Boosted LinkedIn engagements by 904% by effective administration and market research"
+			],
+			"start_year": 2023,
+			"end_year": 2023
+		},
+		{
+			"name": "FEU Tech Association for Computing Machinery",
+			"position": "Director for Academics",
+			"description": [
+				"Directed the academics committee of 6 junior officers for organizational events and duties",
+				"Organized 2 intercollegiate programming competitions attended by over 50 participants across the Philippines",
+				"Hosted 2 study sessions attended by over 100 computer science students",
+				"Served as external head for ITCF 4.0, contacting female founders, executives, and developers from major brands"
+			],
+			"start_year": 2022,
+			"end_year": 2023
+		},
+		{
+			"name": "FEU Tech Google Developer Student Clubs",
+			"position": "Lead Front-End Developer",
+			"description": [
+				"Managed a team of 5 software developers within the GDSC Technology Department",
+				"Coordinated with 25 core team members across departments to organize workshops",
+				"Co-organized in-person study jam sessions attended by over 100 students"
+			],
+			"start_year": 2022,
+			"end_year": 2023
+		}
+	],
+	"education": [
+		{
+			"university": "FEU Institute of Technology",
+			"degree": "BS in Computer Science with specialization in Software Engineering",
+			"start_year": 2022,
+			"end_year": 2026,
+			"description": [
+				"4-Years President's Scholar with High Honors",
+				"Taught 47 Grade 11 ICT students at Valenzuela National High School for Outreach Event",
+				"Showcased 100+ attendees the FEU Tech ACM Innovations including Project ACM-X & ACM Beyond Campus Initiative",
+				"Competed in UMAK IT Olympics, UP Diliman Algolympics, PLM InnOlympics, and 2024 Europe DeveloperWeek"
+			]
+		}
+	],
+	"certifications": [
+		{
+			"name": "CS50x Certificate",
+			"link": "https://certificates.cs50.io/70f8307b-9c42-4fb9-a931-14d5e835a834.pdf?size=letter",
+			"issuer": "Harvard University",
+			"issued_month": 12,
+			"issued_year": 2023
+		},
+		{
+			"name": "CS50x Verified Certificate",
+			"link": "https://courses.edx.org/certificates/bb4919bf719f468c833b6e7555c3f337",
+			"issuer": "edX",
+			"issued_month": 12,
+			"issued_year": 2023
+		},
+		{
+			"name": "Back-End Development & APIs",
+			"link": "https://www.freecodecamp.org/certification/alphacoma18/back-end-development-and-apis",
+			"issuer": "FreeCodeCamp",
+			"issued_month": 9,
+			"issued_year": 2022
+		},
+		{
+			"name": "JavaScript Algorithm & Data Structures",
+			"link": "https://www.freecodecamp.org/certification/alphacoma18/javascript-algorithms-and-data-structures",
+			"issuer": "FreeCodeCamp",
+			"issued_month": 7,
+			"issued_year": 2022
+		},
+		{
+			"name": "Foundational C# with Microsoft",
+			"link": "https://www.freecodecamp.org/certification/alpha-coma/foundational-c-sharp-with-microsoft",
+			"issuer": "FreeCodeCamp",
+			"issued_month": 10,
+			"issued_year": 2023
+		},
+		{
+			"name": "Front-End Development Libraries",
+			"link": "https://www.freecodecamp.org/certification/alpha-coma/front-end-development-libraries",
+			"issuer": "FreeCodeCamp",
+			"issued_month": 6,
+			"issued_year": 2023
+		},
+		{
+			"name": "Foundations of Git Certification",
+			"link": "https://learn.gitkraken.com/certificates/xdvnhr2qdp",
+			"issuer": "GitKraken",
+			"issued_month": 8,
+			"issued_year": 2023
+		},
+		{
+			"name": "Github Foundations",
+			"link": "https://www.credly.com/badges/59e40eef-9a77-43fd-8aa1-de64bd1b5a37",
+			"issuer": "GitHub",
+			"issued_month": 1,
+			"issued_year": 2024
+		},
+		{
+			"name": "Oracle Cloud Infrastructure 2024 Generative AI Professional",
+			"link": "",
+			"issuer": "Oracle",
+			"issued_month": 7,
+			"issued_year": 2024
+		},
+		{
+			"name": "IT Specialist - Python",
+			"link": "https://www.credly.com/badges/d2cba34f-80c8-44a2-ae3a-019407612b90",
+			"issuer": "Certiport",
+			"issued_month": 7,
+			"issued_year": 2024
+		}
+	],
+	"certificates": [
+		{
+			"name": "Front-End Developer",
+			"link": "https://www.hackerrank.com/certificates/ec8744631e7c",
+			"issuer": "HackerRank",
+			"issued_month": 11,
+			"issued_year": 2023
+		},
+		{
+			"name": "Software Engineer Certificate",
+			"link": "https://www.hackerrank.com/certificates/ec8744631e7c",
+			"issuer": "HackerRank",
+			"issued_month": 11,
+			"issued_year": 2023
+		},
+		{
+			"name": "Software Engineer Intern",
+			"link": "https://www.hackerrank.com/certificates/ccdb3f0e794b",
+			"issuer": "HackerRank",
+			"issued_month": 11,
+			"issued_year": 2023
+		},
+		{
+			"name": "MongoDB Node.js Developer",
+			"link": "https://learn.mongodb.com/c/d1o_5fyTT4C6IfuOjJAAnA",
+			"issuer": "MongoDB",
+			"issued_month": 1,
+			"issued_year": 2024
+		},
+		{
+			"name": "Advanced Level of Software Engineering",
+			"link": "https://courses.buri.io/view/user/certificate/ef2bbdcb-52a0-46ca-929b-ae9578de395e/pdf",
+			"issuer": "DICT Philippines",
+			"issued_month": 4,
+			"issued_year": 2024
+		},
+		{
+			"name": "Data Privacy - Good Governance",
+			"link": "https://courses.buri.io/view/user/certificate/33a53487-6fae-4107-bff2-84f014cbcb33/pdf",
+			"issuer": "DICT Philippines",
+			"issued_month": 6,
+			"issued_year": 2024
+		},
+		{
+			"name": "Advanced Level of Cloud Computing",
+			"link": "https://courses.buri.io/view/user/certificate/c83c73ef-c3e8-45eb-a01d-5d2aa2b1d693/pdf",
+			"issuer": "DICT Philippines",
+			"issued_month": 6,
+			"issued_year": 2024
+		},
+		{
+			"name": "Oracle Cloud Infrastructure 2024 Certified Foundations Associate",
+			"link": "https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC5114133&trackId=OCI2024FNDCFA&key=c29395859acc22fd8879bd7aa523a68c6df8887c",
+			"issuer": "Oracle",
+			"issued_month": 7,
+			"issued_year": 2024
+		},
+		{
+			"name": "Oracle Cloud Infrastructure 2023 AI Certified Foundations Associate",
+			"link": "https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC5114133&trackId=OCI23AIFCAJPN&key=92de7ea270e6a4cd4ece8f3e9196e4ab0a923ff3",
+			"issuer": "Oracle",
+			"issued_month": 7,
+			"issued_year": 2024
+		},
+		{
+			"name": "Postman API Fundamentals Student Expert",
+			"link": "https://badgr.com/public/assertions/IFVwmfFqRPuYPpDXDAl2ig",
+			"issuer": "Postman",
+			"issued_month": 7,
+			"issued_year": 2024
+		},
+		{
+			"name": "Artificial Intelligence Foundations",
+			"link": "https://www.credly.com/badges/20554755-628c-4e7c-850d-2de6b9f839a0/public_url",
+			"issuer": "IBM",
+			"issued_month": 7,
+			"issued_year": 2024
+		},
+		{
+			"name": "Career Essentials in Cybersecurity by Microsoft and LinkedIn",
+			"link": "https://www.linkedin.com/learning/certificates/d334be26c196008304a122eba9d87200670b460896119bbc8ce841e54f196f69",
+			"issuer": "LinkedIn Learning",
+			"issued_month": 7,
+			"issued_year": 2024
+		},
+		{
+			"name": "Career Essentials in Software Development by Microsoft and LinkedIn",
+			"link": "https://www.linkedin.com/learning/certificates/9641c0a42811904d8864ca7ab3b08202bf3212e435ba658df07aa5d303df7426",
+			"issuer": "LinkedIn Learning",
+			"issued_month": 7,
+			"issued_year": 2024
+		},
+		{
+			"name": "Career Essentials in Generative AI by Microsoft and LinkedIn",
+			"link": "https://www.linkedin.com/learning/certificates/87563019f6170432c213805f8a2ee2d183eb10cb0bedfee664aa7b8ac6d5c3b4",
+			"issuer": "LinkedIn Learning",
+			"issued_month": 7,
+			"issued_year": 2024
+		},
+		{
+			"name": "Career Essentials in GitHub Professional Certificate",
+			"link": "https://www.linkedin.com/learning/certificates/a2757db272fa3db2a8bab454e92dd359f7045095ae37681b2c96a54f2795b9d4",
+			"issuer": "LinkedIn Learning",
+			"issued_month": 7,
+			"issued_year": 2024
+		},
+		{
+			"name": "JavaScript Foundations Professional Certificate by Mozilla",
+			"link": "https://www.linkedin.com/learning/certificates/68f460ae9701b3e97cbfe50365605a11ebc35e4b814ceda54f05bd140358d225",
+			"issuer": "LinkedIn Learning",
+			"issued_month": 7,
+			"issued_year": 2024
+		},
+		{
+			"name": "Docker Foundations Professional Certificate",
+			"link": "https://www.linkedin.com/learning/certificates/3cbc132a199dfe67eff1eae9fa5bb03ef612e462b735008a64fc0fdd8e0bb28b",
+			"issuer": "LinkedIn Learning",
+			"issued_month": 7,
+			"issued_year": 2024
+		},
+		{
+			"name": "Transform to Open Science",
+			"link": "National Aeronautics and Space Administration (NASA)",
+			"issuer": "LinkedIn Learning",
+			"issued_month": 7,
+			"issued_year": 2024
+		}
+	],
+	"languages": [
+		{
+			"name": "English",
+			"level": "Native"
+		},
+		{
+			"name": "Filipino",
+			"level": "Native"
+		},
+		{
+			"name": "Japanese",
+			"level": "JLPT N3"
+		},
+		{
+			"name": "Chinese",
+			"level": "YCT 2"
+		},
+		{
+			"name": "Korean",
+			"level": "Elementary"
+		}
+	],
+	"awards": [
+		{
+			"name": "Algolympics 2024 Finalist",
+			"issuer": "Association for Computing Machinery - UP Diliman Student Chapter",
+			"link": "https://www.facebook.com/photo.php?fbid=880613944076295&set=pb.100063830932576.-2207520000&type=3",
+			"issued_month": 3,
+			"issued_year": 2024
+		},
+		{
+			"name": "Top 1% of 500K+ WakaTime Developers 2023",
+			"issuer": "WakaTime",
+			"link": "https://www.linkedin.com/feed/update/urn:li:activity:7151429675372675072/",
+			"issued_month": 1,
+			"issued_year": 2024
+		},
+		{
+			"name": "Space Apps 2023 Global Nominee and Galactic Problem Solver",
+			"issuer": "National Aeronautics and Space Administration (NASA)",
+			"link": "https://www.spaceappschallenge.org/2023/find-a-team/feu-tech-acm/",
+			"issued_month": 11,
+			"issued_year": 2023
+		},
+		{
+			"name": "IT Olympics 2023 Participant",
+			"issuer": "University of Makati",
+			"link": null,
+			"issued_month": 10,
+			"issued_year": 2023
+		},
+		{
+			"name": "AIA LifeHackers Hackathon 2022 Participant",
+			"issuer": "AIA Philippines",
+			"link": "https://www.linkedin.com/feed/update/urn:li:activity:7151429675372675072/",
+			"issued_month": 2,
+			"issued_year": 2022
+		}
+	],
+	"affiliations": [
+		{
+			"company": "FEU Institute of Technology",
+			"image": "fit.png",
+			"roles": ["President's Scholar w/ High Honors"]
+		},
+		{
+			"company": "FEU Tech ACM",
+			"image": "fit_acm.png",
+			"roles": ["Initiative Head", "Webmaster", "Former Director for Academics"]
+		},
+		{
+			"company": "FEU Tech GDSC",
+			"image": "fit_gdsc.png",
+			"roles": ["Former Front-End Lead Developer"]
+		},
+		{
+			"company": "Google Developer Groups Cloud Manila",
+			"image": "gdgc.jpg",
+			"roles": ["Volunteer"]
+		},
+		{
+			"company": "Institute of Electrical and Electronics Engineers",
+			"image": "ieee.png",
+			"roles": ["Volunteer"]
+		},
+		{
+			"company": "IEEE Computer Society",
+			"image": "ieee_cs.png",
+			"roles": ["Member"]
+		},
+		{
+			"company": "Logrocket",
+			"image": "logrocket.png",
+			"roles": ["Content Advisory Board Member"]
+		},
+		{
+			"company": "Skilio",
+			"image": "skilio.png",
+			"roles": ["Scholar Fellow"]
+		},
+		{
+			"company": "ULAP.org",
+			"image": "ulap.png",
+			"roles": ["Scholar"]
+		},
+		{
+			"company": "GitHub",
+			"image": "github.png",
+			"roles": ["FOSS Contributor"]
+		},
+		{
+			"company": "Google Play",
+			"image": "google_play.png",
+			"roles": ["App Developer"]
+		},
+		{
+			"company": "Microsoft Store",
+			"image": "ms_store.png",
+			"roles": ["App Developer"]
+		}
+	]
+}
